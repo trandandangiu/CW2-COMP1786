@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MHike"
         tools:targetApi="31">
 
-        <!-- Activity chính của app -->
+        <!-- Activity chính -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,10 +23,15 @@
             </intent-filter>
         </activity>
 
-        <!-- Activity nhập thông tin Hike -->
+        <!-- Activity thêm Hike -->
         <activity
             android:name=".AddHikeActivity"
             android:exported="false" />
+
+        <!-- 🟢 Activity thêm Observation -->
+        <activity
+            android:name=".AddObservationActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

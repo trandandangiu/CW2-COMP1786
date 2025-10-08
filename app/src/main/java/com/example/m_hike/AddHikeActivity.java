@@ -12,6 +12,7 @@ public class AddHikeActivity extends AppCompatActivity {
     RadioGroup rgParking;
     Spinner spDifficulty, spWeather;
     Button btnSave;
+    DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,9 @@ public class AddHikeActivity extends AppCompatActivity {
         spWeather = findViewById(R.id.spWeather);
         btnSave = findViewById(R.id.btnSave);
 
+        // Khởi tạo DatabaseHelper
+        dbHelper = new DatabaseHelper(this);
+
         // Spinner Difficulty
         ArrayAdapter<String> diffAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_dropdown_item,
@@ -46,7 +50,7 @@ public class AddHikeActivity extends AppCompatActivity {
         etDate.setOnClickListener(v -> showDatePicker());
 
         // Button Save
-        btnSave.setOnClickListener(v -> validateAndShow());
+        btnSave.setOnClickListener(v -> validateAndSave());
     }
 
     // Hiển thị lịch chọn ngày
@@ -62,16 +66,19 @@ public class AddHikeActivity extends AppCompatActivity {
         datePicker.show();
     }
 
-    // Kiểm tra dữ liệu và hiển thị thông tin xác nhận
-    private void validateAndShow() {
+    // Kiểm tra dữ liệu và lưu vào DB
+    private void validateAndSave() {
         String name = etName.getText().toString().trim();
         String location = etLocation.getText().toString().trim();
         String date = etDate.getText().toString().trim();
-        String length = etLength.getText().toString().trim();
+        String lengthStr = etLength.getText().toString().trim();
+        String desc = etDescription.getText().toString().trim();
+        String elevationStr = etElevation.getText().toString().trim();
         int selectedParking = rgParking.getCheckedRadioButtonId();
 
+        // Kiểm tra trường bắt buộc
         if (name.isEmpty() || location.isEmpty() || date.isEmpty()
-                || length.isEmpty() || selectedParking == -1) {
+                || lengthStr.isEmpty() || selectedParking == -1) {
             Toast.makeText(this, "⚠ Please fill all required fields!", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -81,26 +88,32 @@ public class AddHikeActivity extends AppCompatActivity {
         String parking = rb.getText().toString();
         String difficulty = spDifficulty.getSelectedItem().toString();
         String weather = spWeather.getSelectedItem().toString();
-        String desc = etDescription.getText().toString();
-        String elevation = etElevation.getText().toString();
 
-        // Hiển thị xác nhận
-        String summary = "✅ Hike Added:\n\n" +
-                "Name: " + name + "\n" +
-                "Location: " + location + "\n" +
-                "Date: " + date + "\n" +
-                "Parking: " + parking + "\n" +
-                "Length: " + length + " km\n" +
-                "Difficulty: " + difficulty + "\n" +
-                "Weather: " + weather + "\n" +
-                "Elevation: " + elevation + " m\n" +
-                "Description: " + desc;
+        // Chuyển đổi kiểu dữ liệu
+        double lengthValue = 0;
+        int elevationValue = 0;
 
-        new android.app.AlertDialog.Builder(this)
-                .setTitle("Confirm Details")
-                .setMessage(summary)
-                .setPositiveButton("OK", null)
-                .setNegativeButton("Edit", null)
-                .show();
+        try {
+            lengthValue = Double.parseDouble(lengthStr);
+            if (!elevationStr.isEmpty()) {
+                elevationValue = Integer.parseInt(elevationStr);
+            }
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "⚠ Invalid number format!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Lưu vào database
+        boolean inserted = dbHelper.insertHike(
+                name, location, date, parking,
+                lengthValue, difficulty, desc, weather, elevationValue
+        );
+
+        if (inserted) {
+            Toast.makeText(this, "✅ Hike saved successfully!", Toast.LENGTH_SHORT).show();
+            finish(); // Quay lại MainActivity sau khi lưu
+        } else {
+            Toast.makeText(this, "❌ Failed to save hike!", Toast.LENGTH_SHORT).show();
+        }
     }
 }

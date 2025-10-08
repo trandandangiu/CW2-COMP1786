@@ -14,4 +14,9 @@
     <string name="weather_condition">Weather condition:</string>
     <string name="elevation_gain">Elevation gain (m)</string>
     <string name="save_hike">Save Hike</string>
+    <string name="reset_database_confirmation">Are you sure you want to reset the entire database? This action cannot be undone.</string>
+    <string name="delete_hike_confirmation">Are you sure you want to delete \"%s\"?</string>
+    <string name="no_hikes_message">No hikes recorded yet. Tap \'+\' to add your first hike!</string>
+    <string name="reset_database">Reset Database</string>
+    <string name="delete_hike">Delete Hike</string>
 </resources>
