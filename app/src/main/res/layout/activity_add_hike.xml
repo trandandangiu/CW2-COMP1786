@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHikeActivity">
+
+    <!-- PHẦN FORM CUỘN -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="70dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/hike_name"
+                android:autofillHints="name"
+                android:inputType="textPersonName" />
+
+            <!-- Location -->
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/location"
+                android:autofillHints="postal_address"
+                android:inputType="textPostalAddress" />
+
+            <!-- Date -->
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/date_of_hike"
+                android:autofillHints="birthDate"
+                android:inputType="date"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:clickable="true" />
+
+            <!-- Parking -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parking_available"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp" />
+
+            <RadioGroup
+                android:id="@+id/rgParking"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <RadioButton
+                    android:id="@+id/rbYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <!-- Length -->
+            <EditText
+                android:id="@+id/etLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/length_km"
+                android:autofillHints="distance"
+                android:inputType="numberDecimal" />
+
+            <!-- Difficulty -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficulty"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/spDifficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description -->
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/description_optional"
+                android:autofillHints="none"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top" />
+
+            <!-- Weather (extra field) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weather_condition"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/spWeather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Elevation (extra field) -->
+            <EditText
+                android:id="@+id/etElevation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/elevation_gain"
+                android:autofillHints="elevation"
+                android:inputType="number" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- NÚT CỐ ĐỊNH DƯỚI MÀN HÌNH -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/save_hike"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:elevation="5dp"
+        android:layout_margin="8dp" />
+
+</FrameLayout>

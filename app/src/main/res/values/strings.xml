@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hike App</string>
+
+    <!-- Add Hike Activity Strings -->
+    <string name="hike_name">Name of hike</string>
+    <string name="location">Location</string>
+    <string name="date_of_hike">Date of hike</string>
+    <string name="parking_available">Parking available:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="length_km">Length (km)</string>
+    <string name="difficulty">Difficulty:</string>
+    <string name="description_optional">Description (optional)</string>
+    <string name="weather_condition">Weather condition:</string>
+    <string name="elevation_gain">Elevation gain (m)</string>
+    <string name="save_hike">Save Hike</string>
+</resources>
