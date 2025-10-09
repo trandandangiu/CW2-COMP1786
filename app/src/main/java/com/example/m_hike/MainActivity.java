@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     DatabaseHelper dbHelper;
     ListView listView;
-    Button btnAdd, btnReset;
+    Button btnAdd, btnReset, btnSearch;
     ArrayAdapter<String> adapter;
 
     @Override
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         btnAdd = findViewById(R.id.btnAdd);
         btnReset = findViewById(R.id.btnReset);
+        btnSearch = findViewById(R.id.btnSearch);
 
         // 🔹 Load danh sách ban đầu
         loadData();
@@ -30,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
         // ➕ Nút Add Hike → mở AddHikeActivity
         btnAdd.setOnClickListener(v -> {
             startActivity(new Intent(this, AddHikeActivity.class));
+        });
+
+        // 🔍 Nút Search → mở SearchHikeActivity
+        btnSearch.setOnClickListener(v -> {
+            startActivity(new Intent(this, SearchHikeActivity.class));
         });
 
         // 🗑 Nút Reset Database → xóa hết dữ liệu

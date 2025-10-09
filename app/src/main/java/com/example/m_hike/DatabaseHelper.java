@@ -5,12 +5,13 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     // Database Info
     private static final String DATABASE_NAME = "hike_db";
-    private static final int DATABASE_VERSION = 2; // Tăng version vì thêm bảng mới
+    private static final int DATABASE_VERSION = 3; // ⚠️ tăng version để cập nhật
 
     // Table Hikes + Columns
     public static final String TABLE_HIKES = "hikes";
@@ -46,11 +47,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 COL_LOCATION + " TEXT NOT NULL, " +
                 COL_DATE + " TEXT NOT NULL, " +
                 COL_PARKING + " TEXT NOT NULL, " +
-                COL_LENGTH + " REAL NOT NULL, " + // Sửa thành REAL cho số
+                COL_LENGTH + " REAL NOT NULL, " +
                 COL_DIFFICULTY + " TEXT NOT NULL, " +
                 COL_DESCRIPTION + " TEXT, " +
                 COL_WEATHER + " TEXT, " +
-                COL_ELEVATION + " INTEGER" + // Sửa thành INTEGER
+                COL_ELEVATION + " INTEGER" +
                 ")";
         db.execSQL(createHikesTable);
 
@@ -77,7 +78,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onOpen(SQLiteDatabase db) {
         super.onOpen(db);
-        db.execSQL("PRAGMA foreign_keys=ON;"); // Bật foreign keys
+        db.execSQL("PRAGMA foreign_keys=ON;");
     }
 
     // ================= CRUD CHO HIKES =================
@@ -198,5 +199,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         cursor.close();
         return count;
+    }
+
+    // ================= SEARCH FUNCTIONALITY =================
+    public Cursor searchHikes(String name, String location, String length, String date) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String query = "SELECT * FROM " + TABLE_HIKES + " WHERE 1=1";
+        ArrayList<String> args = new ArrayList<>();
+
+        if (!name.isEmpty()) {
+            query += " AND " + COL_NAME + " LIKE ?";
+            args.add("%" + name + "%");
+        }
+        if (!location.isEmpty()) {
+            query += " AND " + COL_LOCATION + " LIKE ?";
+            args.add("%" + location + "%");
+        }
+        if (!length.isEmpty()) {
+            query += " AND " + COL_LENGTH + " = ?";
+            args.add(length);
+        }
+        if (!date.isEmpty()) {
+            query += " AND " + COL_DATE + " LIKE ?";
+            args.add("%" + date + "%");
+        }
+
+        return db.rawQuery(query, args.toArray(new String[0]));
     }
 }

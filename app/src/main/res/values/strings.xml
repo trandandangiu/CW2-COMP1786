@@ -19,4 +19,5 @@
     <string name="no_hikes_message">No hikes recorded yet. Tap \'+\' to add your first hike!</string>
     <string name="reset_database">Reset Database</string>
     <string name="delete_hike">Delete Hike</string>
+    <string name="search_hikes">Search Hikes</string>
 </resources>

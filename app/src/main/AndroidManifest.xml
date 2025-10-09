@@ -32,6 +32,12 @@
         <activity
             android:name=".AddObservationActivity"
             android:exported="true" />
+
+        <!--🟢 Activity thêm SearchHikeActivity -->
+        <activity
+            android:name=".SearchHikeActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
