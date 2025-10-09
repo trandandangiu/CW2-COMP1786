@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_hikes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etNameSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name (optional)" />
+
+        <EditText
+            android:id="@+id/etLocationSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location (optional)" />
+
+        <EditText
+            android:id="@+id/etLengthSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Length (optional)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etDateSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date (optional)" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔍 Search"
+            android:layout_marginTop="12dp" />
+
+        <ListView
+            android:id="@+id/listViewResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
