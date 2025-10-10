@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\source\\repos\\mhike_maui\\mhike_maui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\source\\repos\\mhike_maui\\mhike_maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\source\\repos\\mhike_maui\\mhike_maui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\source\\repos\\mhike_maui\\mhike_maui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\source\\repos\\mhike_maui\\mhike_maui\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\source\\repos\\mhike_maui\\mhike_maui\\platforms\\windows\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\platforms\\windows\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\source\\repos\\mhike_maui\\mhike_maui\\platforms\\windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\platforms\\windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MHike_MAUI\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\App.xaml.cs",
+              "RelativeToolTip": "MHike_MAUI\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBgwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T04:59:25.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\App.xaml",
+              "RelativeDocumentMoniker": "MHike_MAUI\\App.xaml",
+              "ToolTip": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\App.xaml",
+              "RelativeToolTip": "MHike_MAUI\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T04:58:43.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MHike_MAUI\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\MainPage.xaml",
+              "RelativeToolTip": "MHike_MAUI\\MainPage.xaml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T04:52:08.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MHike_MAUI\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\MainPage.xaml.cs",
+              "RelativeToolTip": "MHike_MAUI\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T04:44:31.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataStorage.cs",
+              "DocumentMoniker": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\DataStorage.cs",
+              "RelativeDocumentMoniker": "MHike_MAUI\\DataStorage.cs",
+              "ToolTip": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\DataStorage.cs",
+              "RelativeToolTip": "MHike_MAUI\\DataStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T04:43:55.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\Platforms\\Windows\\App.xaml",
+              "RelativeDocumentMoniker": "MHike_MAUI\\Platforms\\Windows\\App.xaml",
+              "ToolTip": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\Platforms\\Windows\\App.xaml",
+              "RelativeToolTip": "MHike_MAUI\\Platforms\\Windows\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-10T04:30:24.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\Platforms\\Windows\\app.manifest",
+              "RelativeDocumentMoniker": "MHike_MAUI\\Platforms\\Windows\\app.manifest",
+              "ToolTip": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\Platforms\\Windows\\app.manifest",
+              "RelativeToolTip": "MHike_MAUI\\Platforms\\Windows\\app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2025-10-10T04:29:21.188Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

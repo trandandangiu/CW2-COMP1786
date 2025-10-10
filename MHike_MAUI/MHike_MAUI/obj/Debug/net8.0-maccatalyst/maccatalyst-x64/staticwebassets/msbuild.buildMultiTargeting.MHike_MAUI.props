@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MHike_MAUI.props" />
+</Project>

@@ -1,0 +1,95 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MHike_MAUI.MainPage"
+             Title="M-Hike (MAUI)">
+    <Grid RowDefinitions="Auto,*,Auto" BackgroundColor="#F8F9FB">
+
+        <!-- Scrollable form -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="20" Spacing="12">
+
+                <Label Text="🏞️ Enter Hike Details"
+                       FontSize="26"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#007AFF"/>
+
+                <Entry x:Name="nameEntry" Placeholder="Hike name *" />
+                <Entry x:Name="locationEntry" Placeholder="Location *" />
+                <DatePicker x:Name="datePicker" />
+
+                <Picker x:Name="parkingPicker" Title="Parking available? *">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Yes</x:String>
+                            <x:String>No</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Entry x:Name="lengthEntry" Placeholder="Length (km) *" Keyboard="Numeric" />
+
+                <Picker x:Name="difficultyPicker" Title="Difficulty *">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Easy</x:String>
+                            <x:String>Moderate</x:String>
+                            <x:String>Hard</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Editor x:Name="descriptionEditor"
+                        Placeholder="Description (optional)"
+                        AutoSize="TextChanges"
+                        HeightRequest="100" />
+
+                <Entry x:Name="weatherEntry" Placeholder="Weather condition" />
+                <Entry x:Name="elevationEntry" Placeholder="Elevation (m)" Keyboard="Numeric" />
+
+                <!-- Photo -->
+                <Button Text="📷 Add Photo" 
+                        BackgroundColor="#FF9500"
+                        TextColor="White"
+                        Clicked="OnAddPhotoClicked" />
+                <Image x:Name="photoPreview" 
+                       HeightRequest="150"
+                       Aspect="AspectFill"
+                       Margin="0,5,0,10" />
+
+                <Label x:Name="resultLabel"
+                       TextColor="Green"
+                       FontAttributes="Italic"
+                       LineBreakMode="WordWrap"
+                       Margin="0,10,0,10"/>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Fixed bottom buttons -->
+        <StackLayout Grid.Row="2"
+                     Orientation="Horizontal"
+                     Spacing="10"
+                     Padding="15"
+                     BackgroundColor="White"
+                     VerticalOptions="End">
+
+            <Button Text="💾 Save Hike"
+                    x:Name="saveButton"
+                    Clicked="OnSaveClicked"
+                    BackgroundColor="#007AFF"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="🗂️ Check Saved"
+                    x:Name="checkButton"
+                    Clicked="OnShowClicked"
+                    BackgroundColor="#34C759"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
