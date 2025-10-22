@@ -5,14 +5,15 @@
     android:padding="16dp">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
+        <!-- Tiêu đề -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add Observation"
+            android:text="@string/edit_observation"
             android:textSize="22sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -23,9 +24,10 @@
             android:id="@+id/etObservation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Observation *"
+            android:hint="@string/observation_text"
             android:inputType="textMultiLine"
             android:minHeight="48dp"
+            android:autofillHints="text"
             android:gravity="top"
             android:padding="12dp"
             android:background="@android:drawable/edit_text"
@@ -36,12 +38,13 @@
             android:id="@+id/etTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Time *"
+            android:hint="@string/observation_time"
+            android:inputType="datetime"
+            android:autofillHints="time"
             android:focusable="false"
             android:clickable="true"
-            android:inputType="datetime"
-            android:minHeight="48dp"
             android:padding="12dp"
+            android:minHeight="48dp"
             android:background="@android:drawable/edit_text"
             android:layout_marginBottom="12dp" />
 
@@ -50,23 +53,36 @@
             android:id="@+id/etComment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Additional comments (optional)"
+            android:hint="@string/observation_comment"
             android:inputType="textMultiLine"
             android:minHeight="48dp"
+            android:autofillHints="text"
             android:gravity="top"
             android:padding="12dp"
             android:background="@android:drawable/edit_text"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="24dp" />
 
-        <!-- Save Button -->
+        <!-- Save button -->
         <Button
-            android:id="@+id/btnSaveObservation"
+            android:id="@+id/btnUpdateObservation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="💾 Save Observation"
+            android:text="@string/save_changes"
             android:textAllCaps="false"
-            android:backgroundTint="@color/teal_200"
             android:textColor="@android:color/white"
+            android:backgroundTint="@color/teal_200"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Delete button -->
+        <Button
+            android:id="@+id/btnDeleteObservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_observation"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_red_light"
             android:padding="14dp" />
     </LinearLayout>
 </ScrollView>

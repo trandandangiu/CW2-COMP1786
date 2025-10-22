@@ -37,6 +37,12 @@
         <activity
             android:name=".SearchHikeActivity"
             android:exported="true" />
+        <activity android:name=".ViewObservationsActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".EditObservationActivity"
+            android:exported="true" />
+
 
     </application>
 

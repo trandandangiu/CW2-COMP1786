@@ -3,105 +3,104 @@ package com.example.m_hike;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.*;
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
+import android.content.Intent;
+
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.Locale;
 
 public class AddObservationActivity extends AppCompatActivity {
 
-    private EditText etObservation, etComment;
-    private TextView tvTime;
-    private Button btnSave;
-    private DatabaseHelper dbHelper;
-    private int hikeId;
-    private String hikeName;
+    EditText etObservation, etTime, etComment;
+    Button btnSaveObservation;
+    DatabaseHelper dbHelper;
+    int hikeId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_observation);
 
-        initializeViews();
-        getIntentData();
-        setupCurrentTime();
-        setupButtonListener();
-    }
-
-    private void initializeViews() {
+        // 🟢 Khởi tạo View
         etObservation = findViewById(R.id.etObservation);
+        etTime = findViewById(R.id.etTime);
         etComment = findViewById(R.id.etComment);
-        tvTime = findViewById(R.id.tvTime);
-        btnSave = findViewById(R.id.btnSaveObservation);
-        dbHelper = new DatabaseHelper(this); // Sửa: bỏ "context:"
-    }
+        btnSaveObservation = findViewById(R.id.btnSaveObservation);
+        dbHelper = new DatabaseHelper(this);
 
-    private void getIntentData() {
-        hikeId = getIntent().getIntExtra("HIKE_ID", -1);
-        hikeName = getIntent().getStringExtra("HIKE_NAME");
-
+        // 🟢 Lấy hike_id từ Intent
+        hikeId = getIntent().getIntExtra("hike_id", -1);
         if (hikeId == -1) {
-            Toast.makeText(this, "Error: No hike selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Error: no hike selected", Toast.LENGTH_SHORT).show();
             finish();
             return;
         }
 
-        // Hiển thị tên hike nếu có
-        if (hikeName != null && !hikeName.isEmpty()) {
-            setTitle("Add Observation for: " + hikeName);
-        }
+        // 🕒 Gán mặc định thời gian hiện tại
+        etTime.setText(new SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault())
+                .format(Calendar.getInstance().getTime()));
+
+        // 🗓 Khi click vào Time → mở Date + Time picker
+        etTime.setOnClickListener(v -> showDateTimePicker());
+
+        // 💾 Khi bấm Save
+        btnSaveObservation.setOnClickListener(v -> saveObservation());
     }
 
-    private void setupCurrentTime() {
-        String currentTime = new SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()).format(new Date());
-        tvTime.setText(currentTime);
+    // 🗓 Hàm chọn ngày & giờ
+    private void showDateTimePicker() {
+        final Calendar calendar = Calendar.getInstance();
 
-        // Cho phép chỉnh sửa thời gian
-        tvTime.setOnClickListener(v -> showTimeEditDialog());
+        DatePickerDialog datePicker = new DatePickerDialog(
+                this,
+                (view, year, month, dayOfMonth) -> {
+                    calendar.set(Calendar.YEAR, year);
+                    calendar.set(Calendar.MONTH, month);
+                    calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+
+                    TimePickerDialog timePicker = new TimePickerDialog(
+                            this,
+                            (view1, hourOfDay, minute) -> {
+                                calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
+                                calendar.set(Calendar.MINUTE, minute);
+
+                                String formatted = new SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault())
+                                        .format(calendar.getTime());
+                                etTime.setText(formatted);
+                            },
+                            calendar.get(Calendar.HOUR_OF_DAY),
+                            calendar.get(Calendar.MINUTE),
+                            true
+                    );
+                    timePicker.show();
+                },
+                calendar.get(Calendar.YEAR),
+                calendar.get(Calendar.MONTH),
+                calendar.get(Calendar.DAY_OF_MONTH)
+        );
+        datePicker.show();
     }
 
-    private void setupButtonListener() {
-        btnSave.setOnClickListener(v -> saveObservation());
-    }
-
+    // 💾 Lưu observation vào DB
     private void saveObservation() {
-        String observation = etObservation.getText().toString().trim();
-        String time = tvTime.getText().toString().trim();
+        String obs = etObservation.getText().toString().trim();
+        String time = etTime.getText().toString().trim();
         String comment = etComment.getText().toString().trim();
 
-        // Validation
-        if (observation.isEmpty()) {
-            etObservation.setError("Observation is required");
-            etObservation.requestFocus();
+        if (obs.isEmpty() || time.isEmpty()) {
+            Toast.makeText(this, "Please fill in all required fields (*)", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        if (time.isEmpty()) {
-            tvTime.setError("Time is required");
-            return;
-        }
+        boolean inserted = dbHelper.insertObservation(hikeId, obs, time, comment);
 
-        // Insert vào database
-        boolean inserted = dbHelper.insertObservation(hikeId, observation, time, comment);
         if (inserted) {
-            Toast.makeText(this, "✅ Observation saved successfully!", Toast.LENGTH_SHORT).show();
-            setResult(RESULT_OK);
-            finish();
+            Toast.makeText(this, "✅ Observation added!", Toast.LENGTH_SHORT).show();
+            finish(); // trở lại ViewObservationsActivity
         } else {
-            Toast.makeText(this, "❌ Failed to save observation!", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    private void showTimeEditDialog() {
-
-        Toast.makeText(this, "Tap to change date/time", Toast.LENGTH_SHORT).show();
-        // TODO: Implement date/time picker dialog
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (dbHelper != null) {
-            dbHelper.close();
+            Toast.makeText(this, "❌ Failed to add observation!", Toast.LENGTH_SHORT).show();
         }
     }
 }

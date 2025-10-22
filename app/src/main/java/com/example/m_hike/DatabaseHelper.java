@@ -5,15 +5,16 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    // Database Info
+    // ================= DATABASE INFO =================
     private static final String DATABASE_NAME = "hike_db";
-    private static final int DATABASE_VERSION = 3; // ⚠️ tăng version để cập nhật
+    private static final int DATABASE_VERSION = 4; // ⚠️ Tăng version mỗi khi thay đổi cấu trúc
 
-    // Table Hikes + Columns
+    // ================= HIKES TABLE =================
     public static final String TABLE_HIKES = "hikes";
     public static final String COL_ID = "id";
     public static final String COL_NAME = "name";
@@ -26,7 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_WEATHER = "weather";
     public static final String COL_ELEVATION = "elevation";
 
-    // Table Observations + Columns
+    // ================= OBSERVATIONS TABLE =================
     public static final String TABLE_OBSERVATIONS = "observations";
     public static final String COL_OBS_ID = "obs_id";
     public static final String COL_OBS_HIKE_ID = "hike_id";
@@ -34,13 +35,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_OBS_TIME = "time";
     public static final String COL_OBS_COMMENT = "comment";
 
+    // ================= CONSTRUCTOR =================
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
+    // ================= CREATE TABLES =================
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Tạo bảng hikes
+        // Table Hikes
         String createHikesTable = "CREATE TABLE " + TABLE_HIKES + " (" +
                 COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COL_NAME + " TEXT NOT NULL, " +
@@ -55,7 +58,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ")";
         db.execSQL(createHikesTable);
 
-        // Tạo bảng observations
+        // Table Observations
         String createObsTable = "CREATE TABLE " + TABLE_OBSERVATIONS + " (" +
                 COL_OBS_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COL_OBS_HIKE_ID + " INTEGER NOT NULL, " +
@@ -81,14 +84,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("PRAGMA foreign_keys=ON;");
     }
 
-    // ================= CRUD CHO HIKES =================
-
+    // ================= CRUD - HIKES =================
     public boolean insertHike(String name, String location, String date, String parking,
                               double length, String difficulty, String description,
                               String weather, int elevation) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-
         cv.put(COL_NAME, name);
         cv.put(COL_LOCATION, location);
         cv.put(COL_DATE, date);
@@ -98,7 +99,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cv.put(COL_DESCRIPTION, description);
         cv.put(COL_WEATHER, weather);
         cv.put(COL_ELEVATION, elevation);
-
         long result = db.insert(TABLE_HIKES, null, cv);
         return result != -1;
     }
@@ -119,7 +119,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                               String weather, int elevation) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-
         cv.put(COL_NAME, name);
         cv.put(COL_LOCATION, location);
         cv.put(COL_DATE, date);
@@ -129,7 +128,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cv.put(COL_DESCRIPTION, description);
         cv.put(COL_WEATHER, weather);
         cv.put(COL_ELEVATION, elevation);
-
         int result = db.update(TABLE_HIKES, cv, COL_ID + "=?", new String[]{String.valueOf(id)});
         return result > 0;
     }
@@ -146,26 +144,40 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.delete(TABLE_HIKES, null, null);
     }
 
-    // ================= CRUD CHO OBSERVATIONS =================
+    // ================= CRUD - OBSERVATIONS =================
 
     public boolean insertObservation(int hikeId, String observation, String time, String comment) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-
         cv.put(COL_OBS_HIKE_ID, hikeId);
         cv.put(COL_OBS_TEXT, observation);
         cv.put(COL_OBS_TIME, time);
         cv.put(COL_OBS_COMMENT, comment);
-
         long result = db.insert(TABLE_OBSERVATIONS, null, cv);
         return result != -1;
     }
 
     public Cursor getObservationsByHike(int hikeId) {
         SQLiteDatabase db = this.getReadableDatabase();
-        return db.rawQuery("SELECT * FROM " + TABLE_OBSERVATIONS +
+        return db.rawQuery(
+                "SELECT " + COL_OBS_ID + " AS _id, " + COL_OBS_HIKE_ID + ", " +
+                        COL_OBS_TEXT + ", " + COL_OBS_TIME + ", " + COL_OBS_COMMENT +
+                        " FROM " + TABLE_OBSERVATIONS +
                         " WHERE " + COL_OBS_HIKE_ID + "=? ORDER BY " + COL_OBS_TIME + " DESC",
-                new String[]{String.valueOf(hikeId)});
+                new String[]{String.valueOf(hikeId)}
+        );
+    }
+
+
+    public boolean updateObservation(int obsId, String observation, String time, String comment) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(COL_OBS_TEXT, observation);
+        cv.put(COL_OBS_TIME, time);
+        cv.put(COL_OBS_COMMENT, comment);
+        int result = db.update(TABLE_OBSERVATIONS, cv, COL_OBS_ID + "=?",
+                new String[]{String.valueOf(obsId)});
+        return result > 0;
     }
 
     public boolean deleteObservation(int obsId) {
@@ -175,28 +187,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result > 0;
     }
 
-    public boolean updateObservation(int obsId, String observation, String time, String comment) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues cv = new ContentValues();
-
-        cv.put(COL_OBS_TEXT, observation);
-        cv.put(COL_OBS_TIME, time);
-        cv.put(COL_OBS_COMMENT, comment);
-
-        int result = db.update(TABLE_OBSERVATIONS, cv, COL_OBS_ID + "=?",
-                new String[]{String.valueOf(obsId)});
-        return result > 0;
+    public Cursor getObservationById(int obsId) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery(
+                "SELECT " + COL_OBS_ID + " AS _id, "
+                        + COL_OBS_HIKE_ID + ", "
+                        + COL_OBS_TEXT + ", "
+                        + COL_OBS_TIME + ", "
+                        + COL_OBS_COMMENT
+                        + " FROM " + TABLE_OBSERVATIONS
+                        + " WHERE " + COL_OBS_ID + "=?",
+                new String[]{String.valueOf(obsId)}
+        );
     }
-
     public int getObservationCount(int hikeId) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT COUNT(*) FROM " + TABLE_OBSERVATIONS +
                         " WHERE " + COL_OBS_HIKE_ID + "=?",
                 new String[]{String.valueOf(hikeId)});
         int count = 0;
-        if (cursor.moveToFirst()) {
-            count = cursor.getInt(0);
-        }
+        if (cursor.moveToFirst()) count = cursor.getInt(0);
         cursor.close();
         return count;
     }
@@ -204,7 +214,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // ================= SEARCH FUNCTIONALITY =================
     public Cursor searchHikes(String name, String location, String length, String date) {
         SQLiteDatabase db = this.getReadableDatabase();
-
         String query = "SELECT * FROM " + TABLE_HIKES + " WHERE 1=1";
         ArrayList<String> args = new ArrayList<>();
 
