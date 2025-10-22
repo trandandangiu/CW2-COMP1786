@@ -44211,11 +44211,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\MHike_MAUI.csproj",
+      "projectUniqueName": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MHike_MAUI.csproj",
       "projectName": "MHike_MAUI",
-      "projectPath": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\MHike_MAUI.csproj",
+      "projectPath": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MHike_MAUI.csproj",
       "packagesPath": "C:\\Users\\trant\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\obj\\",
+      "outputPath": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

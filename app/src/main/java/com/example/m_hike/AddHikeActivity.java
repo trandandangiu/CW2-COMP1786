@@ -2,12 +2,18 @@ package com.example.m_hike;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.*;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.RadioButton;
+import android.widget.Spinner;
+import android.widget.Button;
+import android.widget.Toast;
 import android.app.DatePickerDialog;
 import java.util.Calendar;
 
 public class AddHikeActivity extends AppCompatActivity {
 
+    // 🔹 Khai báo các view
     EditText etName, etLocation, etDate, etLength, etDescription, etElevation;
     RadioGroup rgParking;
     Spinner spDifficulty, spWeather;
@@ -19,7 +25,7 @@ public class AddHikeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_hike);
 
-        // Liên kết View
+        // 🔹 Liên kết View với ID trong XML
         etName = findViewById(R.id.etName);
         etLocation = findViewById(R.id.etLocation);
         etDate = findViewById(R.id.etDate);
@@ -31,29 +37,29 @@ public class AddHikeActivity extends AppCompatActivity {
         spWeather = findViewById(R.id.spWeather);
         btnSave = findViewById(R.id.btnSave);
 
-        // Khởi tạo DatabaseHelper
+        // 🔹 Khởi tạo DatabaseHelper
         dbHelper = new DatabaseHelper(this);
 
-        // Spinner Difficulty
-        ArrayAdapter<String> diffAdapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item,
-                new String[]{"Easy", "Moderate", "Hard"});
+        // 🔹 Spinner Difficulty
+        String[] difficultyLevels = {"Easy", "Moderate", "Hard"};
+        android.widget.ArrayAdapter<String> diffAdapter = new android.widget.ArrayAdapter<>(
+                this, android.R.layout.simple_spinner_dropdown_item, difficultyLevels);
         spDifficulty.setAdapter(diffAdapter);
 
-        // Spinner Weather
-        ArrayAdapter<String> weatherAdapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item,
-                new String[]{"Sunny", "Cloudy", "Rainy", "Snowy"});
+        // 🔹 Spinner Weather
+        String[] weatherOptions = {"Sunny", "Cloudy", "Rainy", "Snowy"};
+        android.widget.ArrayAdapter<String> weatherAdapter = new android.widget.ArrayAdapter<>(
+                this, android.R.layout.simple_spinner_dropdown_item, weatherOptions);
         spWeather.setAdapter(weatherAdapter);
 
-        // Date Picker
+        // 🔹 Date Picker khi click vào ô Date
         etDate.setOnClickListener(v -> showDatePicker());
 
-        // Button Save
+        // 🔹 Button Save
         btnSave.setOnClickListener(v -> validateAndSave());
     }
 
-    // Hiển thị lịch chọn ngày
+    // 🗓 Hiển thị lịch chọn ngày
     private void showDatePicker() {
         final Calendar c = Calendar.getInstance();
         int year = c.get(Calendar.YEAR);
@@ -66,7 +72,7 @@ public class AddHikeActivity extends AppCompatActivity {
         datePicker.show();
     }
 
-    // Kiểm tra dữ liệu và lưu vào DB
+    // ✅ Kiểm tra dữ liệu và lưu vào DB
     private void validateAndSave() {
         String name = etName.getText().toString().trim();
         String location = etLocation.getText().toString().trim();
@@ -76,21 +82,42 @@ public class AddHikeActivity extends AppCompatActivity {
         String elevationStr = etElevation.getText().toString().trim();
         int selectedParking = rgParking.getCheckedRadioButtonId();
 
-        // Kiểm tra trường bắt buộc
-        if (name.isEmpty() || location.isEmpty() || date.isEmpty()
-                || lengthStr.isEmpty() || selectedParking == -1) {
-            Toast.makeText(this, "⚠ Please fill all required fields!", Toast.LENGTH_SHORT).show();
+        boolean isValid = true;
+
+        // 🔸 Kiểm tra các trường bắt buộc
+        if (name.isEmpty()) {
+            etName.setError("Please enter hike name");
+            isValid = false;
+        }
+        if (location.isEmpty()) {
+            etLocation.setError("Please enter location");
+            isValid = false;
+        }
+        if (date.isEmpty()) {
+            etDate.setError("Please select date");
+            isValid = false;
+        }
+        if (lengthStr.isEmpty()) {
+            etLength.setError("Please enter hike length");
+            isValid = false;
+        }
+        if (selectedParking == -1) {
+            Toast.makeText(this, "Please select parking option", Toast.LENGTH_SHORT).show();
+            isValid = false;
+        }
+
+        if (!isValid) {
             return;
         }
 
-        // Lấy dữ liệu
+        // 🔹 Lấy dữ liệu người dùng chọn
         RadioButton rb = findViewById(selectedParking);
         String parking = rb.getText().toString();
         String difficulty = spDifficulty.getSelectedItem().toString();
         String weather = spWeather.getSelectedItem().toString();
 
-        // Chuyển đổi kiểu dữ liệu
-        double lengthValue = 0;
+        // 🔹 Chuyển đổi kiểu dữ liệu
+        double lengthValue;
         int elevationValue = 0;
 
         try {
@@ -99,11 +126,11 @@ public class AddHikeActivity extends AppCompatActivity {
                 elevationValue = Integer.parseInt(elevationStr);
             }
         } catch (NumberFormatException e) {
-            Toast.makeText(this, "⚠ Invalid number format!", Toast.LENGTH_SHORT).show();
+            etLength.setError("Invalid number format");
             return;
         }
 
-        // Lưu vào database
+        // 🔹 Lưu vào database
         boolean inserted = dbHelper.insertHike(
                 name, location, date, parking,
                 lengthValue, difficulty, desc, weather, elevationValue

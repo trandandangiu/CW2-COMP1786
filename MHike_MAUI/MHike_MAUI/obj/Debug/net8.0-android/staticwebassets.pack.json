@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\MHike_MAUI.styles.css",
+      "Id": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\MHike_MAUI.styles.css",
       "PackagePath": "staticwebassets\\MHike_MAUI.styles.css"
     },
     {
-      "Id": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\wwwroot\\index.html",
+      "Id": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

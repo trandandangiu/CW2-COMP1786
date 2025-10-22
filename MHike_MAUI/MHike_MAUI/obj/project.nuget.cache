@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2F58YOHajpE=",
+  "dgSpecHash": "j7zV9DFYOR0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\trant\\source\\repos\\MHike_MAUI\\MHike_MAUI\\MHike_MAUI.csproj",
+  "projectFilePath": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MHike_MAUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trant\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.10\\microsoft.aspnetcore.authorization.8.0.10.nupkg.sha512",
