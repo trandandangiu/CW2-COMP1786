@@ -115,5 +115,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         loadData();
+
+        ListView listView = findViewById(R.id.listViewHikes);
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
+        Cursor cursor = dbHelper.getAllHikes();
+        HikeAdapter adapter = new HikeAdapter(this, cursor);
+        listView.setAdapter(adapter);
+
     }
 }

@@ -64,13 +64,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MHike_MAUI.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"07yqmo1dmp"},{"Name":"integrity","Value":"sha256-ZErXY0WJnTuQiM8q5tER9SavhCsRhl0Ko2VQxmCYWhM="},{"Name":"label","Value":"MHike_MAUI.styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZErXY0WJnTuQiM8q5tER9SavhCsRhl0Ko2VQxmCYWhM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 10 Oct 2025 05:03:26 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZErXY0WJnTuQiM8q5tER9SavhCsRhl0Ko2VQxmCYWhM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Oct 2025 15:05:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="MHike_MAUI.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MHike_MAUI.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZErXY0WJnTuQiM8q5tER9SavhCsRhl0Ko2VQxmCYWhM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZErXY0WJnTuQiM8q5tER9SavhCsRhl0Ko2VQxmCYWhM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 10 Oct 2025 05:03:26 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZErXY0WJnTuQiM8q5tER9SavhCsRhl0Ko2VQxmCYWhM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Oct 2025 15:05:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

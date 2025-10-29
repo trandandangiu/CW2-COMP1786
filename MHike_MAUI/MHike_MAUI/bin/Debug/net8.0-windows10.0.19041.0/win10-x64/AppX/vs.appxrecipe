@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-10-21T14:18:48.580</Modified>
+      <Modified>2025-10-23T16:43:57.760</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-10-21T14:18:48.028</Modified>
+      <Modified>2025-10-23T16:43:57.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MHike_MAUI.runtimeconfig.json">
       <PackagePath>MHike_MAUI.runtimeconfig.json</PackagePath>
-      <Modified>2025-10-10T05:37:34.677</Modified>
+      <Modified>2025-10-23T16:43:57.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MHike_MAUI.dll">
       <PackagePath>MHike_MAUI.dll</PackagePath>
-      <Modified>2025-10-21T14:18:45.129</Modified>
+      <Modified>2025-10-23T16:43:56.461</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MHike_MAUI.exe</PackagePath>
-      <Modified>2025-10-21T14:18:45.195</Modified>
+      <Modified>2025-10-23T16:43:56.525</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -75,23 +75,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2025-10-10T05:03:34.509</Modified>
+      <Modified>2025-10-23T15:06:00.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2025-10-10T05:03:34.525</Modified>
+      <Modified>2025-10-23T15:06:00.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2025-10-10T05:03:34.557</Modified>
+      <Modified>2025-10-23T15:06:00.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-10-10T05:03:34.599</Modified>
+      <Modified>2025-10-23T15:06:00.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2025-10-10T05:03:34.729</Modified>
+      <Modified>2025-10-23T15:06:00.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -99,211 +99,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-10-10T05:37:09.910</Modified>
+      <Modified>2025-10-23T15:06:01.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.887</Modified>
+      <Modified>2025-10-23T15:06:01.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.886</Modified>
+      <Modified>2025-10-23T15:06:01.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.886</Modified>
+      <Modified>2025-10-23T15:06:01.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.885</Modified>
+      <Modified>2025-10-23T15:06:01.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.885</Modified>
+      <Modified>2025-10-23T15:06:01.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.901</Modified>
+      <Modified>2025-10-23T15:06:01.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.900</Modified>
+      <Modified>2025-10-23T15:06:01.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.899</Modified>
+      <Modified>2025-10-23T15:06:01.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.900</Modified>
+      <Modified>2025-10-23T15:06:01.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.900</Modified>
+      <Modified>2025-10-23T15:06:01.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.904</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.904</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.901</Modified>
+      <Modified>2025-10-23T15:06:01.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.903</Modified>
+      <Modified>2025-10-23T15:06:01.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.901</Modified>
+      <Modified>2025-10-23T15:06:01.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.909</Modified>
+      <Modified>2025-10-23T15:06:01.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.909</Modified>
+      <Modified>2025-10-23T15:06:01.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.908</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.908</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.907</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.906</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.906</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.904</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.905</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.905</Modified>
+      <Modified>2025-10-23T15:06:01.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.894</Modified>
+      <Modified>2025-10-23T15:06:01.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.894</Modified>
+      <Modified>2025-10-23T15:06:01.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.893</Modified>
+      <Modified>2025-10-23T15:06:01.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.893</Modified>
+      <Modified>2025-10-23T15:06:01.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.892</Modified>
+      <Modified>2025-10-23T15:06:01.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.897</Modified>
+      <Modified>2025-10-23T15:06:01.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.897</Modified>
+      <Modified>2025-10-23T15:06:01.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.896</Modified>
+      <Modified>2025-10-23T15:06:01.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.896</Modified>
+      <Modified>2025-10-23T15:06:01.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.894</Modified>
+      <Modified>2025-10-23T15:06:01.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.899</Modified>
+      <Modified>2025-10-23T15:06:01.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.899</Modified>
+      <Modified>2025-10-23T15:06:01.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.898</Modified>
+      <Modified>2025-10-23T15:06:01.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.898</Modified>
+      <Modified>2025-10-23T15:06:01.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.897</Modified>
+      <Modified>2025-10-23T15:06:01.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.892</Modified>
+      <Modified>2025-10-23T15:06:01.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.891</Modified>
+      <Modified>2025-10-23T15:06:01.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.891</Modified>
+      <Modified>2025-10-23T15:06:01.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.890</Modified>
+      <Modified>2025-10-23T15:06:01.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.889</Modified>
+      <Modified>2025-10-23T15:06:01.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.884</Modified>
+      <Modified>2025-10-23T15:06:01.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.884</Modified>
+      <Modified>2025-10-23T15:06:01.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.883</Modified>
+      <Modified>2025-10-23T15:06:01.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.882</Modified>
+      <Modified>2025-10-23T15:06:01.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-10-10T05:37:09.881</Modified>
+      <Modified>2025-10-23T15:06:01.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MHike_MAUI.deps.json">
       <PackagePath>MHike_MAUI.deps.json</PackagePath>
-      <Modified>2025-10-21T14:18:47.321</Modified>
+      <Modified>2025-10-23T16:43:57.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -659,7 +659,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.build.endpoints.json">
       <PackagePath>MHike_MAUI.staticwebassets.endpoints.json</PackagePath>
-      <Modified>2025-10-10T05:03:26.579</Modified>
+      <Modified>2025-10-23T15:05:54.330</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -675,11 +675,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\MHike_MAUI.styles.css">
       <PackagePath>wwwroot\MHike_MAUI.styles.css</PackagePath>
-      <Modified>2025-10-10T05:03:26.562</Modified>
+      <Modified>2025-10-23T15:05:54.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\MHike_MAUI.bundle.scp.css">
       <PackagePath>wwwroot\MHike_MAUI.07yqmo1dmp.bundle.scp.css</PackagePath>
-      <Modified>2025-10-10T05:03:26.565</Modified>
+      <Modified>2025-10-23T15:05:54.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>

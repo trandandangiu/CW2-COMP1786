@@ -42,6 +42,8 @@
         <activity
             android:name=".EditObservationActivity"
             android:exported="true" />
+        <activity android:name=".EditHikeActivity" />
+
 
 
     </application>

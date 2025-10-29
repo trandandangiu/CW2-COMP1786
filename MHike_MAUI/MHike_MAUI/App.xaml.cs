@@ -1,12 +1,22 @@
-﻿namespace MHike_MAUI;
+﻿using System.Threading.Tasks;
 
-public partial class App : Application
+namespace MHike_MAUI
 {
-    public App()
+    public partial class App : Application
     {
-        InitializeComponent();
+        public App()
+        {
+            InitializeComponent();
 
-        // Màn hình khởi động
-        MainPage = new MainPage();
+            // 🔹 Load dữ liệu khi app khởi động
+            _ = DataStorage.LoadAsync();
+
+            // 🔹 Bọc MainPage trong NavigationPage để bật Navigation.PushAsync hoạt động
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromArgb("#007AFF"),
+                BarTextColor = Colors.White
+            };
+        }
     }
 }
