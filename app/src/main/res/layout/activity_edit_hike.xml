@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Hike Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:hint="Hike Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Location -->
+        <EditText
+            android:id="@+id/etLocation"
+            android:hint="Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Date -->
+        <EditText
+            android:id="@+id/etDate"
+            android:hint="Date"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Parking RadioGroup -->
+        <RadioGroup
+            android:id="@+id/rgParking"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbYes"
+                android:text="Parking Available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rbNo"
+                android:text="No Parking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <!-- Length -->
+        <EditText
+            android:id="@+id/etLength"
+            android:hint="Length (km)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Elevation -->
+        <EditText
+            android:id="@+id/etElevation"
+            android:hint="Elevation (m)"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Difficulty Spinner -->
+        <Spinner
+            android:id="@+id/spDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Weather Spinner -->
+        <Spinner
+            android:id="@+id/spWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:hint="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:gravity="top" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:text="Update Hike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

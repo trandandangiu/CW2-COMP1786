@@ -1,0 +1,97 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MHike_MAUI.EditPage"
+             Title="✏️ Edit Hike"
+             BackgroundColor="#F8F9FB">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="18">
+
+            <!-- 🏷️ Header -->
+            <Label Text="Edit Hike Information"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   TextColor="#007AFF"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
+
+            <!-- 📋 Input fields -->
+            <Frame Padding="16" CornerRadius="16" HasShadow="True" BackgroundColor="White">
+                <VerticalStackLayout Spacing="12">
+
+                    <Entry x:Name="nameEntry"
+                           Placeholder="Name *"
+                           FontSize="16"
+                           ClearButtonVisibility="WhileEditing"/>
+
+                    <Entry x:Name="locationEntry"
+                           Placeholder="Location *"
+                           FontSize="16"
+                           ClearButtonVisibility="WhileEditing"/>
+
+                    <DatePicker x:Name="datePicker"
+                                Format="dd/MM/yyyy"
+                                FontSize="16"/>
+
+                    <Entry x:Name="lengthEntry"
+                           Placeholder="Length (km)"
+                           Keyboard="Numeric"
+                           FontSize="16"/>
+
+                    <Entry x:Name="elevationEntry"
+                           Placeholder="Elevation (m)"
+                           Keyboard="Numeric"
+                           FontSize="16"/>
+
+                    <Entry x:Name="difficultyEntry"
+                           Placeholder="Difficulty"
+                           FontSize="16"/>
+
+                    <Editor x:Name="descriptionEditor"
+                            Placeholder="Description"
+                            AutoSize="TextChanges"
+                            HeightRequest="100"
+                            FontSize="16"/>
+
+                    <Entry x:Name="weatherEntry"
+                           Placeholder="Weather"
+                           FontSize="16"/>
+
+                    <Entry x:Name="parkingEntry"
+                           Placeholder="Parking"
+                           FontSize="16"/>
+
+                    <!-- 📸 Change Photo -->
+                    <Button Text="📸 Change Photo"
+                            BackgroundColor="#FF9500"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="12"
+                            HeightRequest="45"
+                            Clicked="OnChangePhotoClicked"/>
+
+                    <!-- 🖼️ Preview -->
+                    <Image x:Name="photoPreview"
+                           HeightRequest="200"
+                           Aspect="AspectFill"
+                           Margin="0,10,0,0"
+                           IsVisible="False"
+                           HorizontalOptions="Center"
+                           WidthRequest="320"
+                           Clip="RoundRectangleGeometry CornerRadius=16"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- 💾 Save -->
+            <Button Text="💾 Save Changes"
+                    BackgroundColor="#007AFF"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="14"
+                    HeightRequest="50"
+                    Clicked="OnSaveChangesClicked"
+                    Margin="0,15,0,10"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
