@@ -612,10 +612,6 @@ C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.
 C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
 C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
 C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
-C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
-C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\rpswa.dswa.cache.json
 C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\rjimswa.dswa.cache.json
 C:\Users\trant\AndroidStudioProjects\MHike\MHike_MAUI\MHike_MAUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\rjsmrazor.dswa.cache.json

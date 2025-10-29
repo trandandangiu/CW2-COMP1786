@@ -10,9 +10,9 @@ namespace MHike_MAUI
 {
     public static class DataStorage
     {
-        // 📂 Đường dẫn file JSON để lưu dữ liệu trong AppDataDirectory
+        // 📂 Đường dẫn file JSON để lưu dữ liệu (lưu cố định trong thư mục Documents)
         private static readonly string filePath =
-            Path.Combine(FileSystem.AppDataDirectory, "hikes.json");
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "hikes.json");
 
         // 🧠 Cache tạm trong bộ nhớ
         private static List<Hike> hikes = new();
@@ -51,12 +51,31 @@ namespace MHike_MAUI
         {
             try
             {
+                // 🔹 Đảm bảo thư mục tồn tại trước khi ghi
+                var dir = Path.GetDirectoryName(filePath);
+                if (!Directory.Exists(dir))
+                {
+                    Directory.CreateDirectory(dir!);
+                    Console.WriteLine($"📁 Created directory: {dir}");
+                }
+
+                // 🔹 Tạo file nếu chưa có
+                if (!File.Exists(filePath))
+                {
+                    using (File.Create(filePath)) { }
+                    Console.WriteLine("📄 Created empty hikes.json file.");
+                }
+
+                // 🔹 Ghi dữ liệu JSON
                 string json = JsonSerializer.Serialize(hikes, jsonOptions);
                 await File.WriteAllTextAsync(filePath, json);
+
+                Console.WriteLine($"✅ Data saved successfully to: {filePath}");
+                await Application.Current.MainPage.DisplayAlert("✅ Saved", $"File saved to:\n{filePath}", "OK");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"[DataStorage] SaveAsync error: {ex.Message}");
+                Console.WriteLine($"❌ SaveAsync error: {ex.Message}");
             }
         }
 

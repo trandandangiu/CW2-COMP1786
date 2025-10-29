@@ -161,10 +161,16 @@ namespace MHike_MAUI
                             TextColor = Colors.White,
                             CornerRadius = 12,
                             Padding = new Thickness(12, 4),
-                            Command = new Command(async () =>
-                            {
-                                await Navigation.PushAsync(new EditPage(hike));
-                            })
+Command = new Command(async () =>
+{
+    if (hike == null)
+    {
+        await Application.Current.MainPage.DisplayAlert("Error", "Hike data not found.", "OK");
+        return;
+    }
+
+    await Navigation.PushAsync(new EditPage(hike));
+})
                         },
                         new Button
                         {

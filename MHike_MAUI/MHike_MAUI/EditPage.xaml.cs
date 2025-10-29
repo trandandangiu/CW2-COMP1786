@@ -13,14 +13,37 @@ namespace MHike_MAUI
 
         public EditPage(Hike hike)
         {
-            InitializeComponent();
-            currentHike = hike ?? new Hike();
-            LoadHikeData();
+            InitializeComponent(); // ⚠️ phải luôn gọi đầu tiên
+
+            // 🔹 Kiểm tra dữ liệu nhận vào
+            if (hike == null)
+            {
+                Console.WriteLine("⚠️ EditPage: Received null hike!");
+                DisplayAlert("Error", "No hike data found.", "OK");
+                currentHike = new Hike();
+            }
+            else
+            {
+                currentHike = hike;
+            }
+
+            try
+            {
+                LoadHikeData(); // 🔹 gọi sau khi UI đã sẵn sàng
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ LoadHikeData() failed: {ex.Message}");
+                DisplayAlert("Error", "Failed to load hike data.", "OK");
+            }
         }
 
         // 🧭 Load dữ liệu cũ vào form
         private void LoadHikeData()
         {
+            if (currentHike == null)
+                return;
+
             nameEntry.Text = currentHike.Name ?? "";
             locationEntry.Text = currentHike.Location ?? "";
             datePicker.Date = currentHike.Date == default ? DateTime.Today : currentHike.Date;
@@ -37,6 +60,8 @@ namespace MHike_MAUI
                 photoPreview.IsVisible = true;
                 selectedPhotoPath = currentHike.PhotoPath;
             }
+
+            Console.WriteLine($"✅ Loaded hike: {currentHike.Name}");
         }
 
         // 📸 Thay đổi ảnh mới
@@ -67,7 +92,7 @@ namespace MHike_MAUI
             }
         }
 
-        // 💾 Lưu thay đổi hike
+        // 💾 Lưu thay đổi
         private async void OnSaveChangesClicked(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(nameEntry.Text) || string.IsNullOrWhiteSpace(locationEntry.Text))
@@ -93,8 +118,8 @@ namespace MHike_MAUI
             await DataStorage.UpdateHikeAsync(currentHike);
             await DisplayAlert("✅ Updated", "Hike details updated successfully!", "OK");
 
-            // 🔙 Quay lại trang trước (MainPage)
-            await Navigation.PopAsync();
+            await Navigation.PopAsync(); // 🔙 Quay lại danh sách
         }
     }
 }
+    

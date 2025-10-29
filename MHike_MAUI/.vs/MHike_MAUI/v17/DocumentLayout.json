@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\editpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\editpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\editpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\editpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -31,12 +11,31 @@
       "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\editpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\editpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\trant\\OneDrive\\Pictures\\Documents\\hikes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\hike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\hike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|c:\\users\\trant\\androidstudioprojects\\mhike\\mhike_maui\\mhike_maui\\datastorage.cs||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38CF8017-936D-40B6-AA0D-520C311FE313}|MHike_MAUI\\MHike_MAUI.csproj|solutionrelative:mhike_maui\\datastorage.cs||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,32 +53,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\EditPage.xaml.cs",
+              "RelativeDocumentMoniker": "MHike_MAUI\\EditPage.xaml.cs",
+              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\EditPage.xaml.cs",
+              "RelativeToolTip": "MHike_MAUI\\EditPage.xaml.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAUwHwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:10:28.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MHike_MAUI\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\App.xaml.cs",
+              "RelativeToolTip": "MHike_MAUI\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:25:20.781Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EditPage.xaml",
+              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\EditPage.xaml",
+              "RelativeDocumentMoniker": "MHike_MAUI\\EditPage.xaml",
+              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\EditPage.xaml",
+              "RelativeToolTip": "MHike_MAUI\\EditPage.xaml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAkwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-29T07:10:55.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "hikes.json",
+              "DocumentMoniker": "C:\\Users\\trant\\OneDrive\\Pictures\\Documents\\hikes.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive\\Pictures\\Documents\\hikes.json",
+              "ToolTip": "C:\\Users\\trant\\OneDrive\\Pictures\\Documents\\hikes.json",
+              "RelativeToolTip": "..\\..\\..\\OneDrive\\Pictures\\Documents\\hikes.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T07:43:07.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DataStorage.cs",
               "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\DataStorage.cs",
               "RelativeDocumentMoniker": "MHike_MAUI\\DataStorage.cs",
               "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\DataStorage.cs",
               "RelativeToolTip": "MHike_MAUI\\DataStorage.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAUwJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T03:00:33.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T07:10:56.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MHike_MAUI\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MainPage.xaml.cs",
               "RelativeToolTip": "MHike_MAUI\\MainPage.xaml.cs",
-              "ViewState": "AgIAAL8AAAAAAAAAAAAUwKoAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAEwKwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T02:52:12.171Z"
+              "WhenOpened": "2025-10-29T06:44:22.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\App.xaml",
               "RelativeDocumentMoniker": "MHike_MAUI\\App.xaml",
@@ -87,80 +134,31 @@
               "RelativeToolTip": "MHike_MAUI\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-27T02:49:30.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T05:02:28.131Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "MHike_MAUI\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MauiProgram.cs",
-              "RelativeToolTip": "MHike_MAUI\\MauiProgram.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvxsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T02:48:19.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Hike.cs",
               "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\Hike.cs",
               "RelativeDocumentMoniker": "MHike_MAUI\\Hike.cs",
               "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\Hike.cs",
               "RelativeToolTip": "MHike_MAUI\\Hike.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAA+wBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T07:50:33.733Z"
+              "WhenOpened": "2025-10-29T04:58:03.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\EditPage.xaml.cs",
-              "RelativeDocumentMoniker": "MHike_MAUI\\EditPage.xaml.cs",
-              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\EditPage.xaml.cs",
-              "RelativeToolTip": "MHike_MAUI\\EditPage.xaml.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAUwGQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "DataStorage.cs",
+              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\DataStorage.cs",
+              "RelativeDocumentMoniker": "MHike_MAUI\\DataStorage.cs",
+              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\DataStorage.cs",
+              "RelativeToolTip": "MHike_MAUI\\DataStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T07:47:30.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditPage.xaml",
-              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\EditPage.xaml",
-              "RelativeDocumentMoniker": "MHike_MAUI\\EditPage.xaml",
-              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\EditPage.xaml",
-              "RelativeToolTip": "MHike_MAUI\\EditPage.xaml",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAUwGEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-23T07:47:18.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MHike_MAUI\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\MainPage.xaml",
-              "RelativeToolTip": "MHike_MAUI\\MainPage.xaml",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAUwKYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-23T07:46:38.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\App.xaml.cs",
-              "RelativeDocumentMoniker": "MHike_MAUI\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\trant\\AndroidStudioProjects\\MHike\\MHike_MAUI\\MHike_MAUI\\App.xaml.cs",
-              "RelativeToolTip": "MHike_MAUI\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T07:46:35.116Z"
+              "WhenOpened": "2025-10-29T04:47:32.974Z"
             }
           ]
         }
